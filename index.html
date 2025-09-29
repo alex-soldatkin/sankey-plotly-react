@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Sankey of State-Ownership</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; background-color: #f8f9fa; display: flex; justify-content: center; padding: 2rem; }
+        #root { width: 100%; }
+        .container { display: flex; flex-direction: column; align-items: center; width: 100%; }
+        .controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; padding: 1rem; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .control-group { display: flex; flex-direction: column; align-items: center; }
+        .control-group label { font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem; color: #555; }
+        .btn-group { display: flex; gap: 0.5rem; }
+        .btn { padding: 0.5rem 1rem; border: 1px solid #ccc; background-color: #f0f0f0; border-radius: 4px; cursor: pointer; transition: background-color 0.2s, border-color 0.2s; font-size: 0.9rem; }
+        .btn.active { background-color: #007bff; color: white; border-color: #007bff; }
+        .btn:not(.active):hover { background-color: #e0e0e0; }
+        .reset-btn { background-color: #6c757d; color: white; border-color: #6c757d; }
+        .reset-btn:hover { background-color: #5a6268; }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+        "plotly.js-dist-min": "https://esm.sh/plotly.js-dist-min@2.32.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@18.2.0",
+        "react/": "https://aistudiocdn.com/react@18.2.0"
+      }
+    }
+    </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
